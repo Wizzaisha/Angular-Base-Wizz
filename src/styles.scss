@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@layer tailwind-base, primeng, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+h1 {
+  @apply text-h1 leading-[30px] font-bold;
+}
+
+h2 {
+  @apply text-h2 leading-[23px] font-bold;
+}
+
+h3 {
+  @apply text-h3 leading-[19px] font-bold;
+}
+
+h4 {
+  @apply text-h4 leading-[15px] tracking-[2.4px] font-bold;
+}
+
+.body {
+  @apply text-body leading-[23px] font-medium;
+}
+
+.overline {
+  @apply text-overline leading-[15px] font-bold;
+}
