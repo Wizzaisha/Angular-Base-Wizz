@@ -11,9 +11,4 @@ import { ButtonModule } from 'primeng/button';
 })
 export class AppComponent {
   title = 'kanban-app';
-
-  toggleDarkMode() {
-    const element = document.querySelector('html');
-    element!.classList.toggle('my-app-dark');
-  }
 }
