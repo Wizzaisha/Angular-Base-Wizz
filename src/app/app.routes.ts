@@ -1,12 +1,10 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  {
+    {
     path: '',
-    loadComponent: () =>
-      import(
-        './pages/module1/components/module1-view/module1-view.component'
-      ).then((c) => c.Module1ViewComponent),
+    loadChildren: () =>
+      import('./pages/module1/routes/routes').then((r) => r.MODULE1_ROTES),
   },
   {
     path: 'module2',

@@ -1,48 +1,9 @@
-<div class="flex flex-col justify-center items-center gap-5">
-  <div class="w-full flex flex-col justify-center items-center gap-10">
-    <h2>Current number state: {{ numberState$ | async }}</h2>
+<section class="w-full flex flex-col justify-center items-center gap-5">
+  <app-landing-navbar class="w-full"></app-landing-navbar>
 
-    <div class="flex justify-center items-center gap-10">
-      <app-primary-button
-        text="Increment"
-        (handleClick)="handleNumberChange(0)"
-      >
-      </app-primary-button>
-      <app-primary-button
-        text="Decrement"
-        (handleClick)="handleNumberChange(1)"
-      >
-      </app-primary-button>
-    </div>
-  </div>
+  <app-landing-hero class="w-full"></app-landing-hero>
 
-  <form
-    [formGroup]="form"
-    class="w-full flex flex-col gap-5 justify-center items-center"
-  >
-    <h2>Input example</h2>
+  <app-landing-categories class="w-full"></app-landing-categories>
 
-    <app-text-input
-      [control]="nameField"
-      placeholder="First name"
-      id="nameField"
-      labelText="First name"
-      [showLabel]="true"
-      class="w-full max-w-[25rem]"
-    ></app-text-input>
-
-    <app-primary-button
-      type="submit"
-      text="Submit"
-      class="w-full max-w-[10rem]"
-      (handleClick)="handleSubmit()"
-    >
-    </app-primary-button>
-  </form>
-
-  <p-button
-    label="Toggle Dark Mode"
-    styleClass="mt-10"
-    (onClick)="toggleDarkMode()"
-  />
-</div>
+  <app-landing-footer class="w-full"></app-landing-footer>
+</section>

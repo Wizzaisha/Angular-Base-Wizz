@@ -15,16 +15,22 @@ import {
   Validators,
 } from '@angular/forms';
 import { TextInputComponent } from '../../../../shared/components/inputs/text-input/text-input.component';
+import { LandingNavbarComponent } from "../landing-navbar/landing-navbar.component";
+import { LandingHeroComponent } from "../landing-hero/landing-hero.component";
+import { LandingCategoriesComponent } from "../landing-categories/landing-categories.component";
+import { LandingFooterComponent } from "../landing-footer/landing-footer.component";
 
 @Component({
   selector: 'app-module1-view',
   imports: [
     ButtonModule,
     CommonModule,
-    PrimaryButtonComponent,
-    TextInputComponent,
     ReactiveFormsModule,
-  ],
+    LandingNavbarComponent,
+    LandingHeroComponent,
+    LandingCategoriesComponent,
+    LandingFooterComponent
+],
   templateUrl: './module1-view.component.html',
   styleUrl: './module1-view.component.scss',
 })
