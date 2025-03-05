@@ -6,7 +6,6 @@ import { Store } from '@ngrx/store';
 import { selectNumberState } from '../../store/module1.selectors';
 import { CommonModule } from '@angular/common';
 import { Module1Actions } from '../../store/action.types';
-import { PrimaryButtonComponent } from '../../../../shared/components/buttons/primary-button/primary-button.component';
 import {
   FormBuilder,
   FormControl,
@@ -14,11 +13,9 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { TextInputComponent } from '../../../../shared/components/inputs/text-input/text-input.component';
-import { LandingNavbarComponent } from "../landing-navbar/landing-navbar.component";
-import { LandingHeroComponent } from "../landing-hero/landing-hero.component";
-import { LandingCategoriesComponent } from "../landing-categories/landing-categories.component";
-import { LandingFooterComponent } from "../landing-footer/landing-footer.component";
+import { LandingNavbarComponent } from '../landing-navbar/landing-navbar.component';
+import { LandingFooterComponent } from '../landing-footer/landing-footer.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-module1-view',
@@ -27,10 +24,9 @@ import { LandingFooterComponent } from "../landing-footer/landing-footer.compone
     CommonModule,
     ReactiveFormsModule,
     LandingNavbarComponent,
-    LandingHeroComponent,
-    LandingCategoriesComponent,
-    LandingFooterComponent
-],
+    LandingFooterComponent,
+    RouterModule,
+  ],
   templateUrl: './module1-view.component.html',
   styleUrl: './module1-view.component.scss',
 })

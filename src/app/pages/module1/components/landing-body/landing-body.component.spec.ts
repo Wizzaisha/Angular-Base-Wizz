@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Submodule21Component } from './submodule2-1.component';
+import { LandingBodyComponent } from './landing-body.component';
 
-describe('Submodule21Component', () => {
-  let component: Submodule21Component;
-  let fixture: ComponentFixture<Submodule21Component>;
+describe('LandingBodyComponent', () => {
+  let component: LandingBodyComponent;
+  let fixture: ComponentFixture<LandingBodyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Submodule21Component]
+      imports: [LandingBodyComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Submodule21Component);
+    fixture = TestBed.createComponent(LandingBodyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

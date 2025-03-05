@@ -1,9 +1,11 @@
-<section class="w-full flex flex-col justify-center items-center gap-5">
+<section
+  class="w-full flex flex-col justify-center items-center gap-5 min-h-screen"
+>
   <app-landing-navbar class="w-full"></app-landing-navbar>
 
-  <app-landing-hero class="w-full"></app-landing-hero>
-
-  <app-landing-categories class="w-full"></app-landing-categories>
+  <div class="w-full flex-1">
+    <router-outlet></router-outlet>
+  </div>
 
   <app-landing-footer class="w-full"></app-landing-footer>
 </section>

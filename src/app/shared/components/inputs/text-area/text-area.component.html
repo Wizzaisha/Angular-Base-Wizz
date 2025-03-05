@@ -8,19 +8,20 @@
       >{{ labelText }}</span
     >
   </div>
-  <input
+  <textarea
     [id]="id"
     type="text"
     [placeholder]="placeholder"
     [formControl]="control"
     (blur)="onBlur()"
-    class="input input-primary input-bordered bg-white flex items-center gap-2 w-full input-sm"
+    class="textarea textarea-primary textarea-bordered bg-white flex items-center gap-2 w-full textarea-sm h-48"
     autocomplete="on"
     [ngClass]="{
-      'input-error': !control!.valid && control.touched
+      'textarea-error': !control!.valid && control.touched
     }"
     [readOnly]="readonly"
-  />
+  >
+  </textarea>
 </label>
 
 <div class="w-full text-start">
@@ -43,10 +44,5 @@
     *ngIf="control!.errors?.['minlength'] && control.touched"
     class="text-error"
     >Longitud máxima no válida.</small
-  >
-  <small
-    *ngIf="control!.errors?.['email'] && control.touched"
-    class="text-error"
-    >Email no válido.</small
   >
 </div>

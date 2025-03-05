@@ -1,25 +1,26 @@
-<div
-  class="hero min-h-screen"
-  style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+<div class="hero h-[600px] relative">
+  <div class="absolute inset-0 rounded-xl">
+    <img
+      ngSrc="https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp"
+      fill
+      [priority]="true"
+      alt="hero-img"
+      class="bg-cover h-[600px]"
+    />
+  </div>
   <div class="hero-overlay"></div>
   <div class="hero-content text-center">
-    
-    <div class="max-w-md ">
-
-		<div
-			class="w-full text-neutral-content text-h5 p-5 relative text-center"
-		>
-			<div class="absolute inset-0 bg-accent opacity-75 rounded-xl"></div>
-            <h1 class="relative mb-5 text-5xl font-bold">Hello there</h1>
-            <p class="mb-5 relative">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
-            </p>
-            <button class=" relative btn btn-primary">Get Started</button>
-		</div>
-        
-
-
+    <div class="max-w-md">
+      <div class="w-full text-neutral-content text-h5 p-5 relative text-center">
+        <div class="absolute inset-0 bg-accent opacity-75 rounded-xl"></div>
+        <h1 class="relative mb-5 text-5xl font-bold">Hello there</h1>
+        <p class="mb-5 relative">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
+          id nisi.
+        </p>
+        <button class="relative btn btn-primary">Get Started</button>
+      </div>
     </div>
   </div>
 </div>

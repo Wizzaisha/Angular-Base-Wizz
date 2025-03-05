@@ -8,11 +8,11 @@ module.exports = {
     extend: {
       fontSize: {
         h1: "40px",
-        h2: "18px",
-        h3: "15px",
-        h4: "12px",
-        body: "13px",
-        overline: "12px",
+        h2: "28px",
+        h3: "23px",
+        h4: "18px",
+        body: "15px",
+        overline: "13px",
       },
     },
   },

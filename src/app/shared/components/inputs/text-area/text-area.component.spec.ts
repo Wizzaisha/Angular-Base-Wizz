@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Module2ViewComponent } from './module2-view.component';
+import { TextAreaComponent } from './text-area.component';
 
-describe('Module2ViewComponent', () => {
-  let component: Module2ViewComponent;
-  let fixture: ComponentFixture<Module2ViewComponent>;
+describe('TextAreaComponent', () => {
+  let component: TextAreaComponent;
+  let fixture: ComponentFixture<TextAreaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Module2ViewComponent]
+      imports: [TextAreaComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Module2ViewComponent);
+    fixture = TestBed.createComponent(TextAreaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
